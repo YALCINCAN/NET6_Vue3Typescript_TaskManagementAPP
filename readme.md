@@ -5,6 +5,8 @@
 ## Features
 - Entity Framework Core – Code First
 - Response Wrappers
+- CQRS Pattern 
+- UnitOfWork Pattern
 - Net Core Identity with JWT Authentication
 - Database Seeding
 - Custom Exception Handling Middleware,
