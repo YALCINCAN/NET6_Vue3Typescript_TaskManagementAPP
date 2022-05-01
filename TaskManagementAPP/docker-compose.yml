@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  tasksdb:
+    image: postgres
+    container_name: tasksdb
+    restart : always
+    ports:
+      - 5432:5432
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=1283"
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data
+  webapi:
+    image: webapi
+    restart: always
+    build:
+      context: .
+      dockerfile: WebAPI/Dockerfile
+    ports:
+      - "5129:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:PostgreSqlConnection=User ID=postgres; Password=1283; Server=tasksdb; Port=5432;Database=Tasks;Integrated Security=true;"
+      - "SeriLogConfigurations:PostgreSqlConfiguration:ConnectionString=User ID=postgres; Password=1283; Server=tasksdb; Port=5432;Database=Tasks;Integrated Security=true;"
+      
+volumes:
+  postgres_volume:
