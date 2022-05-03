@@ -7,14 +7,14 @@
 - Response Wrappers
 - CQRS Pattern 
 - UnitOfWork Pattern
+- Repository Pattern
 - Net Core Identity with JWT Authentication
 - Database Seeding
 - Custom Exception Handling Middleware,
 - Confirmation Mail
 - Logging (Serilog)
 - Validation (Fluent Validation) with Aspect (Autofac,Castle.DynamicProxy)
-
-
+ 
 ## How To Start .Net API
 
 For api, you must edit the appsettings.json file before typing these commands.
