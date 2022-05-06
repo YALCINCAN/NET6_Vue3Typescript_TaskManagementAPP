@@ -2,11 +2,16 @@
 
 <img alt="TaskManagement" src="assets/taskmanagement.gif"> </img>
 
-## Features
+**<h2 align="center">Features</p>**
+
+## Backend
+- .NET6
 - Entity Framework Core – Code First
 - Response Wrappers
 - CQRS Pattern 
 - UnitOfWork Pattern
+- Docker
+- Automapper
 - Repository Pattern
 - Net Core Identity with JWT Authentication
 - Database Seeding
@@ -15,6 +20,16 @@
 - Logging (Serilog)
 - Validation (Fluent Validation) with Aspect (Autofac,Castle.DynamicProxy)
  
+## Frontend
+- Vue3
+- Composition API
+- Typescript
+- Vuelidate
+- Tailwindcss
+- Pinia
+- Route guards
+- Dashboard 
+
 ## How To Start .Net API
 
 For api, you must edit the appsettings.json file before typing these commands.
