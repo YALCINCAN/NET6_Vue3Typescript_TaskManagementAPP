@@ -28,7 +28,6 @@
 - Tailwindcss
 - Pinia
 - Route guards
-- Dashboard 
 
 ## How To Start .Net API
 
