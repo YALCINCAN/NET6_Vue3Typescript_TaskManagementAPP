@@ -8,7 +8,8 @@
 - .NET6
 - Entity Framework Core – Code First
 - Response Wrappers
-- CQRS Pattern 
+- CQRS Pattern
+- Mediatr
 - UnitOfWork Pattern
 - Docker
 - Automapper
